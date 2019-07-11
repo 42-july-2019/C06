@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alabreui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/11 15:37:47 by alabreui          #+#    #+#             */
-/*   Updated: 2019/07/11 15:58:30 by alabreui         ###   ########.fr       */
+/*   Created: 2019/07/11 15:48:50 by alabreui          #+#    #+#             */
+/*   Updated: 2019/07/11 15:58:07 by alabreui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,13 @@ void	ft_putstr(char *str)
 
 int		main(int argc, char **argv)
 {
-	if (argc > 0)
-		ft_putstr(argv[0]);
+	int i;
+
+	i = 1;
+	while (i != (argc))
+	{
+		ft_putstr(argv[i]);
+		write(1, "\n", 1);
+		i++;
+	}
 }
