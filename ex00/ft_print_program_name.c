@@ -6,7 +6,7 @@
 /*   By: alabreui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/11 15:37:47 by alabreui          #+#    #+#             */
-/*   Updated: 2019/07/11 15:58:30 by alabreui         ###   ########.fr       */
+/*   Updated: 2019/07/14 20:37:38 by alabreui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,5 @@ int		main(int argc, char **argv)
 {
 	if (argc > 0)
 		ft_putstr(argv[0]);
+	write(1, "\n", 1);
 }
